@@ -27,11 +27,17 @@ import meow from './meow.png'
 
 
 export const company_logos = [
+  meow,
   tiba,
   vece,
   cwdt,
-  meow,
 ]
+export const company_logo_links = [
+  'https://quantummeow.github.io/columbia-qiskit-fall-fest-2025/', // meow
+  'https://www.instagram.com/columbiatiba/',                 // tiba
+  'https://www.instagram.com/vece_columbiasps/',             // vece
+  'https://www.instagram.com/columbiawdt/?hl=en',            // cwdt
+];
 
 const assets = {
   logo,
