@@ -16,7 +16,7 @@ const Navbar = ({theme, setTheme}) => {
       
         <img 
   src={theme === 'dark' ? assets.logo_dark : assets.logo} 
-  className={theme === 'dark' ? 'w-36 sm:w-40' : 'w-36 sm:w-40'} 
+  className={theme === 'dark' ? 'w-30 sm:w-34' : 'w-36 sm:w-40'} 
   alt="logo"
 />
 
