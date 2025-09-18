@@ -12,10 +12,6 @@ import Footer from './components/Footer'
 const App = () => {
 
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
-  useEffect(() => {
-  document.documentElement.classList.toggle('dark', theme === 'dark');
-  localStorage.setItem('theme', theme);
-}, [theme]);
 
 
   const dotRef = useRef(null)
@@ -55,11 +51,7 @@ const App = () => {
  
 
   return (
-    <div
-  className={`relative min-h-screen transition-colors
-    ${theme === 'dark'
-      ? 'bg-[radial-gradient(ellipse_at_center,_#2a3a6e_0%,_#172652_42%,_#0a1633_85%)]'
-      : 'bg-white'}`}>
+    <div className='dark:bg-black relative'>
       <Toaster />
       <Navbar theme={theme} setTheme={setTheme}/>
       <Hero />
