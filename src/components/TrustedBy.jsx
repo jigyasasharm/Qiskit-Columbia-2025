@@ -1,5 +1,5 @@
 import React from 'react'
-import {company_logos} from '../assets/assets'
+import {company_logos, company_logo_links} from '../assets/assets'
 import { motion } from "framer-motion";
 
 const TrustedBy = () => {
@@ -26,19 +26,23 @@ const TrustedBy = () => {
         {/* Featured clickable logo (MEOW) */}
 
 
-        {company_logos.map((logo, index)=>( 
-            <motion.img 
-              variants={{
-                hidden: { opacity: 0, y: 10 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              transition={{ duration: 0.4 }}
-              key={index} 
-              src={logo} 
-              alt="" 
-              className='max-h-20 sm:max-h-22 dark:drop-shadow-5xl'
-            />
-        ))}
+        {company_logos.map((logo, index)=>(
+  <motion.a
+    key={index}
+    href={company_logo_links[index] || '#'}
+    target="_blank"
+    rel="noopener noreferrer"
+    variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+    transition={{ duration: 0.4 }}
+    className="group"
+  >
+    <motion.img
+      src={logo}
+      alt=""
+      className="max-h-20 sm:max-h-22 dark:drop-shadow-5xl group-hover:scale-105 transition-transform"
+    />
+  </motion.a>
+))}
       </motion.div>
     </motion.div>
   )
