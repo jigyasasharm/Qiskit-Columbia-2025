@@ -22,12 +22,14 @@ import logo_dark from './logo_dark.svg'
 import menu_icon_dark from './menu_icon_dark.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
+import meow from './meow.png'
 
 
 export const company_logos = [
   tiba,
   vece,
   cwdt,
+  meow,
 ]
 
 const assets = {
