@@ -23,6 +23,22 @@ const TrustedBy = () => {
         transition={{ staggerChildren: 0.1 }}
         viewport={{ once: true }}
       className='flex items-center justify-center flex-wrap gap-10 m-4'>
+        {/* Featured clickable logo (MEOW) */}
+<motion.a
+  href="https://YOUR-MEOW-LINK.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+  transition={{ duration: 0.4 }}
+  className="group"
+>
+  <motion.img
+    src={assets.meow /* or just `meow` if that's your named export */}
+    alt="MEOW"
+    className="max-h-28 sm:max-h-32 dark:drop-shadow-5xl hover:scale-105 transition-transform"
+  />
+</motion.a>
+
         {company_logos.map((logo, index)=>( 
             <motion.img 
               variants={{
