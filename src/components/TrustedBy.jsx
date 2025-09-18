@@ -25,7 +25,7 @@ const TrustedBy = () => {
       className='flex items-center justify-center flex-wrap gap-10 m-4'>
         {/* Featured clickable logo (MEOW) */}
 <motion.a
-  href="https://YOUR-MEOW-LINK.com"
+  href="https://quantummeow.github.io/columbia-qiskit-fall-fest-2025/"
   target="_blank"
   rel="noopener noreferrer"
   variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
