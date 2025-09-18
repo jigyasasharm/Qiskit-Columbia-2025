@@ -26,12 +26,15 @@ const Hero = () => {
         transition={{ duration: 0.6, delay: 2 }}
         viewport={{ once: true }}
         
-        className="relative"
->
-            <img src={assets.hero_img} alt="IBM Columbia collaboration"  className="w-screen h-[47vh] object-cover"/>
-            <p className="text-2xl sm:text-3xl font-bold text-center">
-            Qiskit Fall Fest 2025
-            </p>
+        className="relative">
+  <img
+    src={assets.hero_img}
+    alt="IBM Columbia collaboration"
+    className="w-screen h-[47vh] object-cover rounded-b-[48px]"/>
+
+<p className="mt-8 text-2xl sm:text-3xl font-bold text-center">
+  Qiskit Fall Fest 2025
+</p>
             <img src={assets.bgImage1} alt="" className='absolute -top-40 scale-150 -right-70 sm:-top-70 sm:-right-30  -z-1 dark:hidden'/>
         </motion.div>
       
