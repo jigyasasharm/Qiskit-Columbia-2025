@@ -25,6 +25,7 @@ import moon_icon from './moon_icon.svg'
 import meow from './meow.png'
 
 
+
 export const company_logos = [
   tiba,
   vece,
