@@ -24,7 +24,7 @@ const OurWork = () => {
       id='our-work'
       className='flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-15 text-gray-700 dark:text-white'
     >
-      <Title title='Qiskit Fall Fest 2025' desc='Dates will be out soon'/>
+      <Title title='Qiskit Fall Fest 2025' desc='November 7' 2025'/>
 
       {/* One-column grid so only one card shows */}
       <div className='grid grid-cols-1 gap-6 w-full max-w-2xl'>
