@@ -55,7 +55,7 @@ const OurWork = () => {
       >
         {/* Replace with your landscape image asset */}
         <img
-          src={assets.work_landscape} 
+          src={assets.work_fitness_app} 
           alt="Register"
           className='w-full rounded-xl object-cover hover:opacity-90 transition-all duration-300'
         />
