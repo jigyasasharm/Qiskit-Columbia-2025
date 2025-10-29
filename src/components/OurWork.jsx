@@ -36,7 +36,10 @@ const OurWork = () => {
             viewport={{ once: true }}
             className='hover:scale-102 duration-500 transition-all cursor-pointer'
           >
-            <img src={work.image} className='w-full rounded-xl' alt="" />
+            <Link to={https://cglink.me/2iD/r1931586} aria-label="Register for Qiskit Fall Fest 2025">
+            <img src={work.image} className='w-full rounded-xl' alt="Register for Qiskit Fall Fest 2025" />
+             </Link>
+    
             <h3 className='mt-3 mb-2 text-lg font-semibold'>{work.title}</h3>
             <p className='text-sm opacity-60 w-5/6'>{work.description}</p>
           </motion.div>
